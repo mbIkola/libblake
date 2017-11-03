@@ -8,14 +8,15 @@
   },
   "scripts": {
     "test": "npm run test",
-    "build-wa" : "wa compile -D __WEBASSEMBLY__ -l -O src/blake.c -I./include -o ./dist/wa/blake.wasm"
+    "build-wa": "wa compile -D __WEBASSEMBLY__ -l -O src/blake.c -I./include -o ./dist/wa/blake.wasm"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbIkola/libblake.git"
   },
   "keywords": [
-    "blake", "rfc2104",
+    "blake",
+    "rfc2104",
     "wasm",
     "webassembly"
   ],

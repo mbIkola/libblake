@@ -81,7 +81,7 @@ protected:
 
 class BlakeTest : public HashShitFuncTestTemplate {
 public:
-    BlakeTest() : HashShitFuncTestTemplate() { digest_size = 200; };
+    BlakeTest() : HashShitFuncTestTemplate() { digest_size = 32; }; // blake256 requires 32bytes
 protected:
     string calc(string input) {
         uint8_t *input_binary = hex2bin(input);
