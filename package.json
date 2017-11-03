@@ -1,0 +1,31 @@
+{
+  "name": "libblake-wasm",
+  "version": "1.0.0",
+  "description": "hmac_blake_256|224.js hash library as WASM module. ",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run test",
+    "build-wa" : "wa compile -D __WEBASSEMBLY__ -l -O src/blake.c -I./include -o ./dist/wa/blake.wasm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbIkola/libblake.git"
+  },
+  "keywords": [
+    "blake", "rfc2104",
+    "wasm",
+    "webassembly"
+  ],
+  "author": "Nickolay \"mbIkola\" Kharchevin <kharchevyn@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbIkola/libblake/issues"
+  },
+  "homepage": "https://github.com/mbIkola/libblake#readme",
+  "devDependencies": {
+    "webassembly": "^0.11.0"
+  }
+}
